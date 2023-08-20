@@ -1,0 +1,84 @@
+{%load static %}
+<!doctype html>
+<html>
+<head>
+	<title>css animaton</title>
+	<style>
+		body
+		{
+			background-color: black;
+		}
+		div
+		{
+			position: relative;
+			top: 200px;
+			left: 220;
+		}
+		div>span
+		{
+			background-color: black;
+			display:inline-block ;
+			width: 30px;
+			height: 40px;
+			margin:40px;
+			border-radius: 100%;
+			box-shadow:0 0 10px white;
+
+			animation: k 1s linear 0s infinite normal;
+		}
+		div>span:first-child
+		{
+			background-color: red;
+			animation-delay: 0.1s;
+		}
+		div>span:nth-child(2)
+		{
+			background-color: green;
+			animation-delay: 0.2s;
+		}
+		div>span:nth-child(3)
+		{
+			background-color: blue;
+			animation-delay: 0.3s;
+		}
+		div>span:nth-child(4)
+		{
+			background-color: cyan;
+			animation-delay: 0.4s;
+		}
+		div>span:nth-child(5)
+		{
+			background-color: yellow;
+			animation-delay: 0.5s;
+		}
+		div>span:last-child
+		{
+			background-color: violet;
+			animation-delay: 0.6s;
+		}
+		@keyframes k
+		{
+			0%,100%
+			{
+				transform: scale(0.3,0.3);
+			}
+			50%
+			{
+				transform: scale(3,3);	
+			}
+
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		
+	</div>
+</body>
+</html>

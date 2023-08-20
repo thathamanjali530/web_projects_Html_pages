@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title> student </title>
+ </head>
+ <body>
+ 	<h1>matrimony</h1>
+    <table border='2px'>
+ 	<th>SNO</th>
+ 	<th>NAME</th>
+ 	<th>AGE</th>
+ 	<th>IMAGE</th>
+ 	<tr>
+ 		<td>1</td>
+ 		<td>anjali</td>
+ 		<td>22</td>
+ 		<td><img src="{% static 'images/anjali.jpg' %}"/></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>ashok</td>
+        <td>23</td>
+        <td><img src="{% static 'images/ashok.jpg' %}"/></td>
+    </tr>
+    </table>
+</body>
+</html>
